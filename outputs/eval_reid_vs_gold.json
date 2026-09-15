@@ -3,40 +3,40 @@
   "frames": 190,
   "iou_threshold": 0.5,
   "pred_file": "/content/K4-L2-L3-DAY03-LeThanhTung-2A202602211-VideoTracking/outputs/model_reid_clip_01.txt",
-  "gt_file": "/content/K4-L2-L3-DAY03-LeThanhTung-2A202602211-VideoTracking/annotations/clip_01/gt.txt",
+  "gt_file": "/content/K4-L2-L3-DAY03-LeThanhTung-2A202602211-VideoTracking/gold/clip_01/gt.txt",
   "pred_label": "yolo26n.pt + BoT-SORT + ReID treatment",
-  "gt_label": "nhãn của bạn",
+  "gt_label": "gold clip_01",
   "metrics": {
-    "HOTA": 0.8199,
-    "DetA": 0.7625,
-    "AssA": 0.8831,
-    "LocA": 0.9146,
-    "IDF1": 0.9076,
-    "IDTP": 550,
-    "IDFP": 88,
-    "IDFN": 24,
-    "MOTA": 0.8084,
-    "MOTP": 0.9073,
+    "HOTA": 0.7635,
+    "DetA": 0.711,
+    "AssA": 0.8204,
+    "LocA": 0.8721,
+    "IDF1": 0.9001,
+    "IDTP": 545,
+    "IDFP": 93,
+    "IDFN": 28,
+    "MOTA": 0.7923,
+    "MOTP": 0.8595,
     "IDSW": 2,
-    "FP": 86,
-    "FN": 22,
-    "GT_boxes": 574,
+    "FP": 91,
+    "FN": 26,
+    "GT_boxes": 573,
     "PRED_boxes": 638
   },
   "gate": {
     "checks": {
       "IDF1": {
-        "value": 0.9075907590759076,
+        "value": 0.9000825763831544,
         "required": 0.8,
         "passed": true
       },
       "MOTA": {
-        "value": 0.8083623693379791,
+        "value": 0.7923211169284468,
         "required": 0.75,
         "passed": true
       },
       "MOTP": {
-        "value": 0.9072513744924591,
+        "value": 0.8594860342091353,
         "required": 0.7,
         "passed": true
       }
@@ -53,25 +53,44 @@
           17
         ],
         "frames_each": {
-          "18": 52,
+          "18": 51,
           "17": 1
         },
-        "gt_length": 59
+        "gt_length": 60
       },
       {
         "gt_track": 6,
         "pred_tracks": [
           31,
-          28
+          24
         ],
         "frames_each": {
-          "31": 44,
-          "28": 1
+          "31": 43,
+          "24": 1
         },
-        "gt_length": 55
+        "gt_length": 56
+      },
+      {
+        "gt_track": 7,
+        "pred_tracks": [
+          29,
+          39
+        ],
+        "frames_each": {
+          "29": 80,
+          "39": 1
+        },
+        "gt_length": 85
       }
     ],
-    "partially_covered_gt_tracks": [],
+    "partially_covered_gt_tracks": [
+      {
+        "gt_track": 6,
+        "covered": 44,
+        "gt_length": 56,
+        "ratio": 0.79
+      }
+    ],
     "ghost_pred_tracks": [
       {
         "pred_track": 7,
@@ -101,29 +120,20 @@
         "length": 16
       },
       {
-        "pred_track": 39,
-        "reason": "không khớp track tham chiếu nào",
-        "frames": [
-          163,
-          169
-        ],
-        "length": 3
-      },
-      {
-        "pred_track": 24,
-        "reason": "không khớp track tham chiếu nào",
-        "frames": [
-          104,
-          104
-        ],
-        "length": 1
-      },
-      {
         "pred_track": 26,
         "reason": "không khớp track tham chiếu nào",
         "frames": [
           105,
           105
+        ],
+        "length": 1
+      },
+      {
+        "pred_track": 28,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          107,
+          107
         ],
         "length": 1
       }
@@ -136,54 +146,66 @@
         "to_track": 18
       },
       {
-        "frame": 112,
+        "frame": 113,
         "gt_track": 6,
-        "from_track": 28,
+        "from_track": 24,
         "to_track": 31
       }
     ],
     "loose_boxes": [
       {
-        "frame": 108,
-        "gt_track": 7,
-        "pred_track": 29,
-        "iou": 0.517
-      },
-      {
-        "frame": 112,
+        "frame": 104,
         "gt_track": 6,
-        "pred_track": 31,
-        "iou": 0.537
+        "pred_track": 24,
+        "iou": 0.522
       },
       {
         "frame": 109,
         "gt_track": 7,
         "pred_track": 29,
-        "iou": 0.56
+        "iou": 0.532
       },
       {
         "frame": 140,
-        "gt_track": 2,
+        "gt_track": 1,
         "pred_track": 3,
-        "iou": 0.562
+        "iou": 0.546
       },
       {
-        "frame": 190,
-        "gt_track": 2,
-        "pred_track": 3,
-        "iou": 0.573
-      },
-      {
-        "frame": 107,
+        "frame": 113,
         "gt_track": 6,
-        "pred_track": 28,
-        "iou": 0.585
+        "pred_track": 31,
+        "iou": 0.566
+      },
+      {
+        "frame": 114,
+        "gt_track": 6,
+        "pred_track": 31,
+        "iou": 0.575
+      },
+      {
+        "frame": 110,
+        "gt_track": 7,
+        "pred_track": 29,
+        "iou": 0.576
       },
       {
         "frame": 138,
-        "gt_track": 2,
+        "gt_track": 1,
+        "pred_track": 3,
+        "iou": 0.579
+      },
+      {
+        "frame": 190,
+        "gt_track": 1,
         "pred_track": 3,
         "iou": 0.589
+      },
+      {
+        "frame": 115,
+        "gt_track": 6,
+        "pred_track": 31,
+        "iou": 0.6
       }
     ],
     "n_gt_tracks": 8,

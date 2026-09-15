@@ -11,7 +11,7 @@
     },
     "reid": {
       "label": "BoT-SORT + ReID treatment",
-      "tracker": "/content/Day3-Lab/configs/trackers/botsort-reid.yaml"
+      "tracker": "/content/K4-L2-L3-DAY03-LeThanhTung-2A202602211-VideoTracking/configs/trackers/botsort-reid.yaml"
     }
   },
   "conf": 0.25,
